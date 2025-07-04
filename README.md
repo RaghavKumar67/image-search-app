@@ -1,1 +1,1 @@
-This is a React Starter Project for use in Stephen Grider's courses on Udemy.
+Just an image search app to show the list of images
