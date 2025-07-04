@@ -3,7 +3,7 @@ import { useState } from 'react';
 function ImageShow({ image, isFavorite, onToggleFavorite }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const handleDownload = () => {
+  const handleDownloadBtn = () => {
     const link = document.createElement('a');
     link.href = image.urls.full;
     link.download = `${image.id}.jpg`;
@@ -26,7 +26,7 @@ function ImageShow({ image, isFavorite, onToggleFavorite }) {
           {isFavorite ? '★ Favorite' : '☆ Fav'}
         </button>
         <button
-          onClick={handleDownload}
+          onClick={handleDownloadBtn}
           className="px-2 py-1 rounded text-sm bg-blue-400 text-white hover:bg-blue-600"
         >
           Download
